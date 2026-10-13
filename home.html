@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos al Blog Khipu">
+    <title>Blog Khipu</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="scrpt.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Bienvenidos al Blog Khipu</h1>
+        <p>Un espacio para compartir y aprender</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <h2>Nombres y Apellidos</h2>
+            <p>Completa el formulario para registrarte.</p>
+
+            <form id="formulario">
+                <div class="campo">
+                    <label for="nombres">Nombres:</label>
+                    <input
+                        type="text"
+                        id="nombres"
+                        name="nombres"
+                        placeholder="Ingresa tus nombres"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="apellidos">Apellidos:</label>
+                    <input
+                        type="text"
+                        id="apellidos"
+                        name="apellidos"
+                        placeholder="Ingresa tus apellidos"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Registrar</button>
+            </form>
+
+            <p id="mensaje" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="tarjeta">
+            <h2>Personas registradas</h2>
+            <ul id="lista-personas">
+                <li class="vacio">Todavía no hay registros.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; 2026 Blog Khipu - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

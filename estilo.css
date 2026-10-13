@@ -1,0 +1,162 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f4f8;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    background: linear-gradient(135deg, #075e54, #10a37f);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.encabezado h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 1.1rem;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 35px auto;
+    display: grid;
+    gap: 25px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta h2 {
+    color: #087f6b;
+    margin-bottom: 10px;
+}
+
+.tarjeta > p {
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo input:focus {
+    border-color: #10a37f;
+    box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.15);
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 13px;
+    background: #087f6b;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #065f50;
+}
+
+/* Mensajes */
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#mensaje:empty {
+    display: none;
+}
+
+.exito {
+    color: #087f43;
+}
+
+.error {
+    color: #c62828;
+}
+
+/* Lista de personas */
+#lista-personas {
+    list-style: none;
+}
+
+#lista-personas li {
+    padding: 12px;
+    margin-top: 10px;
+    background: #e8f5f1;
+    border-left: 4px solid #10a37f;
+    border-radius: 5px;
+}
+
+#lista-personas .vacio {
+    background: #f1f5f9;
+    border-left-color: #94a3b8;
+    color: #64748b;
+}
+
+/* Pie de página */
+.pie {
+    text-align: center;
+    background: #263238;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .encabezado h1 {
+        font-size: 1.7rem;
+    }
+
+    .contenedor {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+}
